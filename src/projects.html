@@ -10,7 +10,7 @@
 
 <body class="bg-[#FEFAE0]">
   <header class="bg-secondary h-[13vh] flex justify-evenly content-center text-white items-center rounded-xl m-2">
-    <span class="text-2xl">Portofolio</span>
+    <span class="text-2xl">Portfolio</span>
     <nav class="flex gap-10">
       <a href="./index.html">Home</a>
       <a href="./projects.html" class="underline underline-offset-8">Projects</a>
@@ -19,7 +19,11 @@
   <section class="main m-2 rounded-xl bg-principal">
     <div class="m-3 inline-block [&>div]:my-3 sm:flex sm:flex-col items-center sm:h-[83vh] ">
       <div class="project border rounded-xl sm:flex h-1/3 w-full lg:w-[80%] xl:w-[70%] 2xl:w-[65%]">
-        <img src="../img/tpv.jpg" alt="Error loading img" class="rounded-xl h-[20vh] w-full sm:h-auto  sm:w-[200px]" />
+        <picture>
+          <source srcset="../img/tpv-mb.png" type="image/webp" media="(max-width: 639px)"/>
+          <source srcset="../img/tpv.jpg" type="image/webp" media="(min-width: 640px)"/>
+          <img src="../img/tpv-mb.png" alt="Error loading img" class="rounded-xl h-[20vh] w-full sm:h-auto sm:w-[250px]" />
+        </picture>
         <div class="desc flex-1 m-2 flex flex-col justify-around">
           <h2 class="text-3xl">POS Terminal software</h2>
           <p class="">
@@ -34,7 +38,7 @@
         </div>
       </div>
       <div class="project border rounded-xl sm:flex h-1/3 w-full lg:w-[80%] xl:w-[70%] 2xl:w-[65%]">
-        <img src="../img/collsacampus.jpg" alt="Error loading img" class="rounded-xl h-[20vh] w-full sm:h-auto sm:w-[200px]" />
+        <img src="../img/collsacampus.jpg" alt="Error loading img" class="rounded-xl h-[20vh] w-full sm:h-auto sm:w-[250px]" />
         <div class="desc flex-1 m-2 flex flex-col justify-around">
           <h2 class="text-3xl">Collsacampus</h2>
           <p class="">
@@ -49,7 +53,7 @@
         </div>
       </div>
       <div class="project border rounded-xl sm:flex h-1/3 w-full lg:w-[80%] xl:w-[70%] 2xl:w-[65%]">
-        <img src="../img/usapadelgroup-logo.png" alt="Error loading img" class="rounded-xl h-[20vh] w-full sm:h-auto sm:w-[200px]" />
+        <img src="../img/usapadelgroup-logo.png" alt="Error loading img" class="rounded-xl h-[20vh] w-full sm:h-auto sm:w-[250px]" />
         <div class="desc flex-1 m-2 flex flex-col justify-around">
           <h2 class="text-3xl">USA Padel group</h2>
           <p class="">
