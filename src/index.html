@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tailwind CSS with Parcel</title>
   <link rel="stylesheet" href="../dist/output.css" />
+  <link rel="stylesheet" href="./input.css" />
 </head>
 
 <body class="bg-[#FEFAE0]">
@@ -23,7 +24,7 @@
     <section
       class="col1 py-5 [&>*]:px-[5%] xl:[&>*]:px-[10%] bg-principal md:flex xl:flex-col xl:justify-center xl:w-[40%]">
       <div class="img  flex justify-center items-center">
-        <img src="../img/hassan.jpg" alt="" class="w-[50%] md:max-lg:w-[75%] rounded-full">
+        <img src="../img/hassan.webp" alt="" class="w-[50%] md:max-lg:w-[75%] profile-img">
       </div>
       <div class="text [&>*]:my-4 text-center">
         <h2 class="text-2xl text-center md:max-xl:text-left text-highlight-500">Web developer</h2>
@@ -33,7 +34,13 @@
           inventore, nobis provident esse temporibus minus, vero incidunt unde
           sint ea neque dolor consectetur earum tenetur repellendus at.
           Repudiandae, aut modi?
+          
         </h3>
+        <button class="px-8 py-3 text-2xl bg-highlight-500 text-white rounded-2xl  hover:text-white hover:bg-highlight-800 duration-500 animate-pulse animate-infinite animate-duration-[3500ms]">CV
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" data-slot="icon" class="w-6 h-6 inline">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+          </svg>          
+        </button>
       </div>
     </section>
 
@@ -180,17 +187,17 @@
                       [&>*]:rounded-xl [&>*]:border 
                       [&>div>a]:opacity-0  [&>div]:hover:cursor-pointer 
                       ">
-          <div class="group bg-secondary text-white w-1/3 text-center py-5">
+          <div class="group bg-secondary text-white w-1/3 text-center py-5 project">
             <span class="text-[2vh] group-hover:opacity-100">TPV / POS</span>
             <a class="group-hover:opacity-100 group-hover:text-highlight-500 rounded-md  duration-500" href="tpv.html"
               type="button">+ info</a>
           </div>
-          <div class="group bg-secondary text-white w-1/3 text-center" py-5>
+          <div class="group bg-secondary text-white w-1/3 text-center py-5 project">
             <span class="text-[2vh] group-hover:opacity-100">Collsacampus</span>
             <a class="group-hover:opacity-100 group-hover:text-highlight-500 rounded-md  duration-500"
               href="collsacampus.html" type="button">+ info</a>
           </div>
-          <div class="group bg-secondary text-white w-full md:w-1/3 text-center py-5">
+          <div class="group bg-secondary text-white w-full md:w-1/3 text-center py-5 project">
             <span class="text-[2vh] group-hover:opacity-100">USA Padel group</span>
             <a class="group-hover:opacity-100 group-hover:text-highlight-500 rounded-md  duration-500"
               href="usapadelgroup.html" type="button">+ info</a>
